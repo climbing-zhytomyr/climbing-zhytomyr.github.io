@@ -52,14 +52,6 @@ svg.alias {
   white-space: unset !important;
 }
 
-/* fixes oversized page properties on Safari */
-.notion-scroller
-  > div:nth-child(2):not(.notion-page-content)
-  > div:not([data-block-id])
-  div:not(.notion-page-details-controls) {
-  height: auto !important;
-}
-
 /* fixes possible stray header on tables */
 .notion-collection_view_page-block > div:first-child {
   transform: unset !important;
@@ -139,14 +131,6 @@ a[data-token-index] svg.page {
   .notion-list-view > .notion-collection_view_page-block {
     width: fit-content;
   }
-
-  .notion-scroller
-  > div:nth-child(2):not(.notion-page-content)
-  > div:not([data-block-id])
-  div:not(.notion-page-details-controls) {
-  padding-left: 0!important;
-  padding-right: 0!important;
-}
 }
 
 .pseudoAfter:after {
